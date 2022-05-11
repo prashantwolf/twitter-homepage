@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+
+/* Messages fixed div start*/
+
+.messages {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px 15px 0 0;
+    background: red;
+    display: flex;
+    color: #fff;
+    background: #19A5F1;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.messages .icons{
+    margin-left: auto;
+}
+
+/* Messages fixed div end*/
+
+
+
+/* making the outline of the twitter page with grid of three cols  */
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    grid-template-rows: 100%;
+}
+
+
+/* side bar left start*/
+.sidebar-left {
+    border-right: 1px solid #bbb;
+}
+
+.sidebar-left .items .icon {
+    font-size: 2rem;
+    color: #19A5F1;
+    margin-right: 1em;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.sidebar-left .items {
+    /* background: red; */
+    margin-left: 35px;
+    height: 100%;
+    font-size: 1.2rem;
+    transition: all 100ms ease-in-out;
+}
+
+.sidebar-left .items .item {
+    margin: 10px 50px;
+    border-radius: 20px;
+    padding: 15px;
+    /* background: red; */
+}
+
+.sidebar-left .items .item .fa {
+    margin-right: 10px;
+}
+
+.sidebar-left .items .item:hover {
+    background: #ddd;
+}
+
+.sidebar-left .button-twitter {
+    margin-top: 50px;
+    height: 50px;
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-left .button-twitter button {
+    height: 50px;
+    width: 200px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #19A5F1;
+    border-radius: 40px;
+}
+
+/* sidebar left end*/
+
+
+/* main content start */
+main {
+    border-right: 1px solid #ccc;
+
+}
+
+main header {
+    display: flex;
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+main header .star {
+    color: #19A5F1;
+    margin-left: auto;
+}
+
+main header .home {
+    font-weight: 700;
+}
+
+main .content {
+    height: 100%;
+    /* background: red; */
+    overflow: auto;
+}
+
+main .content .post {
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    /* background: #19A5F1; */
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+main .content .post .profile-pic {
+    /* background-color: green; */
+    width: 10%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .content .post .profile-pic .image {
+    width: 50px;
+    height: 50px;
+    background: skyblue;
+    border-radius: 50%;
+}
+
+main .content .post .post-content .icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+main .content .post .post-content {
+    width: 90%;
+    /* background: blue; */
+}
+
+
+/* main content end*/
+
+.sidebar-right {}
